@@ -1,0 +1,34 @@
+A51 MACRO ASSEMBLER  COPY_10BYTES                                                         02/10/2020 19:35:42 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN Copy_10bytes.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE Copy_10bytes.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 0000h
+0000 7830              2     mov r0,#30h
+0002 790A              3     mov r1,#10
+0004 900400            4     mov dptr,#400h
+0007 E0                5     nxt: movx a,@ dptr
+0008 F6                6          mov @ r0,a
+0009 A3                7              inc dptr
+000A 08                8              inc r0
+000B D9FA              9     djnz r1,nxt
+                      10     end
+A51 MACRO ASSEMBLER  COPY_10BYTES                                                         02/10/2020 19:35:42 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+NXT. . . . . . . .  C ADDR   0007H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,62 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\OCAC\Desktop\MCES LAB\TASK1.uvproj
+Project File Date:  02/11/2020
+
+<h2>Output:</h2>
+assembling time_delay.asm...
+time_delay.asm(4): warning A73: TEXT FOUND BEYOND END STATEMENT - IGNORED
+time_delay.asm - 0 Error(s), 1 Warning(s).
+assembling time_delay.asm...
+time_delay.asm - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=8.0 xdata=0 code=27
+"TASK1" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling time_delay.asm...
+linking...
+Program Size: data=8.0 xdata=0 code=27
+"TASK1" - 0 Error(s), 0 Warning(s).
+assembling time_delay.asm...
+time_delay.asm - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=8.0 xdata=0 code=27
+"TASK1" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+assembling time_delay.asm...
+linking...
+Program Size: data=8.0 xdata=0 code=27
+"TASK1" - 0 Error(s), 0 Warning(s).
+assembling time_delay.asm...
+time_delay.asm(9): warning A41: MISSING 'END' STATEMENT
+time_delay.asm - 0 Error(s), 1 Warning(s).
+assembling time_delay.asm...
+time_delay.asm - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=8.0 xdata=0 code=20
+"TASK1" - 0 Error(s), 0 Warning(s).
+assembling time_delay.asm...
+time_delay.asm - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=8.0 xdata=0 code=27
+"TASK1" - 0 Error(s), 0 Warning(s).
+assembling time_delay.asm...
+time_delay.asm(15): warning A41: MISSING 'END' STATEMENT
+time_delay.asm - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=8.0 xdata=0 code=27
+"TASK1" - 0 Error(s), 0 Warning(s).
+assembling time_delay.asm...
+time_delay.asm - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: data=8.0 xdata=0 code=27
+"TASK1" - 0 Error(s), 0 Warning(s).

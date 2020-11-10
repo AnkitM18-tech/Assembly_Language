@@ -1,0 +1,48 @@
+A51 MACRO ASSEMBLER  TIME_DELAY                                                           03/05/2020 10:45:28 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN time_delay.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE time_delay.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 0000h
+0000 7E02              2     main:mov r6,#02d
+0002 1108              3     loop1:acall delay
+0004 DEFC              4               djnz r6,loop1
+0006 80FE              5     exit:sjmp exit
+0008 758901            6     delay:mov tmod,#01h ;t0 to mode 1
+000B 758CFC            7               mov th0,#0fch ;th0=fch
+000E 758A66            8               mov tl0,#066h ;tl0=66h
+0011 D28C              9               setb tr0 ;start t0
+0013 308DFD           10     here:jnb tf0,here ;loop here till tf0=1
+0016 C28C             11              clr tr0 ;stop t0
+0018 C28D             12              clr tf0 ;clear tf0 flag
+001A 32               13              reti
+                      14     end
+                             
+A51 MACRO ASSEMBLER  TIME_DELAY                                                           03/05/2020 10:45:28 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DELAY. . . . . . .  C ADDR   0008H   A   
+EXIT . . . . . . .  C ADDR   0006H   A   
+HERE . . . . . . .  C ADDR   0013H   A   
+LOOP1. . . . . . .  C ADDR   0002H   A   
+MAIN . . . . . . .  C ADDR   0000H   A   
+TF0. . . . . . . .  B ADDR   0088H.5 A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TL0. . . . . . . .  D ADDR   008AH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

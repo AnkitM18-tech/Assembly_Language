@@ -1,0 +1,45 @@
+A51 MACRO ASSEMBLER  DIV                                                                  02/13/2020 01:26:41 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN div.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE div.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 0000h
+0000 7410              2     mov a,#10h
+0002 75F00A            3     mov b,#0Ah
+0005 84                4     div ab
+0006 F8                5     mov r0,a
+0007 E5F0              6     mov a,b
+0009 C4                7     swap a
+000A 7B00              8     mov r3,#00h
+000C 4B                9     orl a,r3
+000D 75F00A           10     mov b,#0Ah
+0010 84               11     div ab
+0011 F9               12     mov r1,a
+0012 E5F0             13     mov a,b
+0014 C4               14     swap a
+0015 7B07             15     mov r3,#07h
+0017 4B               16     orl a,r3
+0018 75F00A           17     mov b,#0Ah
+001B 84               18     div ab
+001C FA               19     mov r2,a
+001D ACF0             20     mov r4,b
+                      21     end
+A51 MACRO ASSEMBLER  DIV                                                                  02/13/2020 01:26:41 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

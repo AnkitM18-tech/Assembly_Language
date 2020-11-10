@@ -1,0 +1,48 @@
+A51 MACRO ASSEMBLER  ADD                                                                  01/22/2020 06:41:35 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN Add.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE Add.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 906050            2     MOV DPTR,#6050H
+0003 E0                3     MOVX A,@ DPTR
+0004 F8                4     MOV R0,A
+0005 906052            5     MOV DPTR,#6052H
+0008 E0                6     MOVX A,@ DPTR
+0009 38                7     ADDC A,R0
+000A 906054            8     MOV DPTR,#6054H
+000D F0                9     MOVX @ DPTR,A
+000E 906051           10     MOV DPTR,#6051H
+0011 E0               11     MOVX A,@ DPTR
+0012 F9               12     MOV R1,A
+0013 906053           13     MOV DPTR,#6053H
+0016 E0               14     MOVX A,@ DPTR
+0017 39               15     ADDC A,R1
+0018 906055           16     MOV DPTR,#6055H
+001B F0               17     MOVX @ DPTR,A
+001C 7B00             18     MOV R3,#00H
+001E 5001             19     JNC AHEAD
+0020 0B               20     INC R3
+0021 EB               21     AHEAD:MOV A,R3
+0022 906056           22     MOV DPTR,#6056H
+0025 F0               23     MOVX @ DPTR,A
+                      24     END
+A51 MACRO ASSEMBLER  ADD                                                                  01/22/2020 06:41:35 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AHEAD. . . . . . .  C ADDR   0021H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

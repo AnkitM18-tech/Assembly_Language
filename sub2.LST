@@ -1,0 +1,47 @@
+A51 MACRO ASSEMBLER  SUB2                                                                 02/10/2020 20:03:08 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN sub2.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE sub2.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 0000h
+0000 903050            2     mov dptr,#3050h
+0003 E0                3     movx a,@ dptr
+0004 F8                4     mov r0,a
+0005 903052            5     mov dptr,#3052h
+0008 E0                6     movx a,@ dptr
+0009 C3                7     clr c
+000A 98                8     subb a,r0
+000B 903054            9     mov dptr,#3054h
+000E E0               10     movx a,@ dptr
+000F F9               11     mov r1,a
+0010 903053           12     mov dptr,#3053h
+0013 E0               13     movx a,@ dptr
+0014 99               14     subb a,r1
+0015 903055           15     mov dptr,#3055h
+0018 F0               16     movx @ dptr,a
+0019 7B00             17     mov r3,#00h
+001B 5001             18     jnc nxt
+001D 0B               19     inc r3
+001E EB               20     nxt:mov a,r3
+001F 903056           21             mov dptr,#3056h
+0022 F0               22             movx @ dptr,a
+                      23     end
+A51 MACRO ASSEMBLER  SUB2                                                                 02/10/2020 20:03:08 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+NXT. . . . . . . .  C ADDR   001EH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

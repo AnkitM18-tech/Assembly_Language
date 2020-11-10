@@ -1,0 +1,41 @@
+A51 MACRO ASSEMBLER  SUBTRACT                                                             02/11/2020 02:56:03 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN Subtract.OBJ
+ASSEMBLER INVOKED BY: C:\Keil\C51\BIN\A51.EXE Subtract.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 0000h
+0000 906050            2     mov dptr,#6050h
+0003 E0                3     movx a,@ dptr
+0004 F8                4     mov r0,a
+0005 906052            5     mov dptr,#6052h
+0008 E0                6     movx a,@ dptr
+0009 98                7     subb a,r0
+000A 906054            8     mov dptr,#6054h
+000D F0                9     movx @ dptr,a
+000E 906051           10     mov dptr,#6051h
+0011 E0               11     movx a,@ dptr
+0012 F9               12     mov r1,a
+0013 906053           13     mov dptr,#6053h
+0016 E0               14     movx a,@ dptr
+0017 99               15     subb a,r1
+0018 906055           16     mov dptr,#6055h
+001B F0               17     movx @ dptr,a
+                      18     end
+A51 MACRO ASSEMBLER  SUBTRACT                                                             02/11/2020 02:56:03 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
